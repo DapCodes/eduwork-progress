@@ -1,0 +1,131 @@
+<!-- 
+    ELEMENT ELEMENT UTAMA HTML YANG SAYA TANGKAP DARI MATERI DAN SLIDE PEMBELAJARAN DI #SESI1
+-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Elemen HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+        }
+        header, nav, footer {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        section, article, aside {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Selamat Datang di Web Saya</h1>
+        <p>Ini adalah contoh elemen-elemen HTML yang sering digunakan</p>
+    </header>
+
+    <!-- NAVIGASI -->
+    <nav>
+        <a href="#section1">Beranda</a> |
+        <a href="#section2">Tentang</a> |
+        <a href="#section3">Kontak</a>
+    </nav>
+
+    <!-- GAMBAR -->
+    <section>
+        <h2>Gambar</h2>
+        <img src="https://via.placeholder.com/200" alt="Contoh Gambar">
+    </section>
+
+    <!-- TABEL -->
+    <section>
+        <h2>Tabel</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Umur</th>
+                    <th>Kota</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Budi</td>
+                    <td>25</td>
+                    <td>Jakarta</td>
+                </tr>
+                <tr>
+                    <td>Siti</td>
+                    <td>22</td>
+                    <td>Bandung</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- FORMULIR -->
+    <section>
+        <h2>Formulir Kontak</h2>
+        <form action="#" method="post">
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama" name="nama"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="pesan">Pesan:</label><br>
+            <textarea id="pesan" name="pesan"></textarea><br><br>
+
+            <input type="submit" value="Kirim">
+        </form>
+    </section>
+
+    <!-- DAFTAR -->
+    <section>
+        <h2>Daftar</h2>
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Langkah 1</li>
+            <li>Langkah 2</li>
+            <li>Langkah 3</li>
+        </ol>
+
+        <h3>Unordered List</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <!-- ARTICLE DAN ASIDE -->
+    <article>
+        <h2>Artikel</h2>
+        <p>Ini adalah konten utama dari sebuah artikel.</p>
+    </article>
+
+    <aside>
+        <h2>Sidebar</h2>
+        <p>Ini konten sampingan seperti berita atau iklan.</p>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Web Belajar HTML. Semua hak dilindungi.</p>
+    </footer>
+
+</body>
+</html>

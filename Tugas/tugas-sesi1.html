@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil Biodata</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            color: white;
+            text-align: center;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem;
+            background-color: #f0f0f0;
+        }
+        .hero .text {
+            flex: 1;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .hero img {
+            flex: 1;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+        .biodata {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            padding: 2rem;
+            background-color: #e8e8e8;
+        }
+        .box {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .portfolio {
+            padding: 2rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #444;
+        }
+        th, td {
+            padding: 1rem;
+            text-align: center;
+        }
+        th {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section 1: Menu -->
+    <nav>
+        Menu | Biodata | Portofolio | Kontak
+    </nav>
+
+    <!-- Section 2: Judul kiri, gambar kanan -->
+    <div class="hero">
+        <div class="text">Halo, Saya Daffa Ramadhan</div>
+        <img src="https://via.placeholder.com/300" alt="Foto Profil">
+    </div>
+
+    <!-- Section 3: Biodata -->
+    <div class="biodata">
+        <div class="box">Nama: Daffa Ramadhan Maulana</div>
+        <div class="box">Tanggal Lahir: 7 Oktober 2007</div>
+        <div class="box">Alamat: Bandung</div>
+        <div class="box">Email: daffa@example.com</div>
+        <div class="box">No. HP: 0088888888</div>
+        <div class="box">Hobi: Code</div>
+    </div>
+
+    <!-- Section 4: Portofolio -->
+    <div class="portfolio">
+        <h2>Portofolio</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Judul Proyek</th>
+                    <th>Deskripsi</th>
+                    <th>Tahun</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Aplikasi Kasir</td>
+                    <td>Web aplikasi kasir untuk UMKM</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Website Portfolio</td>
+                    <td>Website pribadi untuk menampilkan karya</td>
+                    <td>2024</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
