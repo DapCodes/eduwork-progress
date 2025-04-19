@@ -1,120 +1,141 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Profil Biodata</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        nav {
-            background-color: #333;
-            padding: 1rem;
-            color: white;
-            text-align: center;
-        }
-        .hero {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 2rem;
-            background-color: #f0f0f0;
-        }
-        .hero .text {
-            flex: 1;
-            font-size: 2rem;
-            font-weight: bold;
-        }
-        .hero img {
-            flex: 1;
-            max-width: 300px;
-            border-radius: 10px;
-        }
-        .biodata {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
-            padding: 2rem;
-            background-color: #e8e8e8;
-        }
-        .box {
-            background-color: white;
-            padding: 1rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .portfolio {
-            padding: 2rem;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid #444;
-        }
-        th, td {
-            padding: 1rem;
-            text-align: center;
-        }
-        th {
-            background-color: #ddd;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Pribadi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #3f51b5;
+      color: white;
+      padding: 20px;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .hero .text {
+      flex: 1;
+    }
+
+    .hero img {
+      max-width: 600px;
+      height: auto;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .about-grid div {
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .portfolio {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .project {
+      width: 350px;
+      text-align: center;
+    }
+
+    .project img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Section 1: Menu -->
-    <nav>
-        Menu | Biodata | Portofolio | Kontak
-    </nav>
-
-    <!-- Section 2: Judul kiri, gambar kanan -->
-    <div class="hero">
-        <div class="text">Halo, Saya Daffa Ramadhan</div>
-        <img src="https://via.placeholder.com/300" alt="Foto Profil">
+  <header>
+    <div class="navbar">
+      <div><strong>Brand</strong></div>
+      <div>
+        <a href="#">Header</a>
+        <a href="#">Biodata</a>
+        <a href="#">Portofolio</a>
+      </div>
     </div>
+  </header>
 
-    <!-- Section 3: Biodata -->
-    <div class="biodata">
-        <div class="box">Nama: Daffa Ramadhan Maulana</div>
-        <div class="box">Tanggal Lahir: 7 Oktober 2007</div>
-        <div class="box">Alamat: Bandung</div>
-        <div class="box">Email: daffa@example.com</div>
-        <div class="box">No. HP: 0088888888</div>
-        <div class="box">Hobi: Code</div>
+  <div class="hero">
+    <div class="text">
+      <h2>Selamat Datang di Website Saya</h2>
+      <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini. <a href="#">Pelajari Lebih Lanjut</a></p>
     </div>
+    <div>
+      <img src="https://via.placeholder.com/600x400" alt="Contoh Gambar">
+    </div>
+  </div>
 
-    <!-- Section 4: Portofolio -->
+  <section>
+    <h2>About Me</h2>
+    <p>A brief introduction about myself</p>
+    <div class="about-grid">
+      <div>Full Name</div>
+      <div>Education</div>
+      <div>Pekerjaan</div>
+      <div>Contact</div>
+      <div>Hobi</div>
+      <div>Alamat</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Portofolio</h2>
     <div class="portfolio">
-        <h2>Portofolio</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Judul Proyek</th>
-                    <th>Deskripsi</th>
-                    <th>Tahun</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Aplikasi Kasir</td>
-                    <td>Web aplikasi kasir untuk UMKM</td>
-                    <td>2023</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Website Portfolio</td>
-                    <td>Website pribadi untuk menampilkan karya</td>
-                    <td>2024</td>
-                </tr>
-            </tbody>
-        </table>
+      <div class="project">
+        <img src="https://via.placeholder.com/350x200" alt="Proyek 1">
+        <p>Deskripsi proyek 1</p>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/350x200" alt="Proyek 2">
+        <p>Deskripsi proyek 2</p>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/350x200" alt="Proyek 3">
+        <p>Deskripsi proyek 3</p>
+      </div>
     </div>
+  </section>
 
 </body>
 </html>
