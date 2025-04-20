@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Pribadi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #3f51b5;
+      color: white;
+      padding: 20px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .hero .text {
+      flex: 1;
+    }
+
+    .text {
+      text-align: center;
+    }
+
+    .hero img {
+      max-width: 600px;
+      height: auto;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-grid {
+      align-items: center;
+      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .about-grid div {
+      padding: 15px;
+      width: 320px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .portfolio {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .project {
+      width: 350px;
+      text-align: center;
+    }
+
+    .project img {
+      width: 100%;
+      height: auto;
+    }
+
+    .btn {
+      background-color: #3f51b5;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .img-hero {
+      width: 400px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    strong {
+      color: #3f51b5;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div><strong style="color: white;">Brand</strong></div>
+      <div>
+        <a href="#">Header</a>
+        <a href="#">Biodata</a>
+        <a href="#">Portofolio</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="text">
+      <h2>Selamat Datang di Website Saya</h2>
+      <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini. </p>
+      <button class="btn">Pelajari Lebih Lanjut</button>
+    </div>
+    <div>
+      <img class="img-hero" src="../assets/1.jpg" alt="Contoh Gambar">
+    </div>
+  </div>
+
+  <section>
+    <h2>About Me</h2>
+    <p>A brief introduction about myself</p>
+    <div class="about-grid">
+      <div><strong>Full Name:</strong> Daffa</div>
+      <div><strong>Education:</strong> SMK ASSALAAM</div>
+      <div><strong>Pekerjaan:</strong> Backend Develover</div>
+      <div><strong>Contact:</strong> @d4pfft</div>
+      <div><strong>Hobi:</strong> Code</div>
+      <div><strong>Alamat:</strong> Bandung</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Portofolio</h2>
+    <div class="portfolio">
+      <div class="project">
+        <img src="../assets/13.jpg" alt="Proyek 1">
+        <p>Proyek 1</p>
+      </div>
+      <div class="project">
+        <img src="../assets/7.jpg" alt="Proyek 2">
+        <p>Proyek 2</p>
+      </div>
+      <div class="project">
+        <img src="../assets/19.jpg" alt="Proyek 3">
+        <p>Proyek 3</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
