@@ -108,6 +108,61 @@
     strong {
       color: #3f51b5;
     }
+
+    @media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero .text {
+    margin-bottom: 20px;
+  }
+
+  .img-hero {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar div:last-child {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .navbar a {
+    margin: 5px 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid div {
+    width: 100%;
+  }
+
+  .portfolio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 90%;
+  }
+}
+
   </style>
 </head>
 <body>
