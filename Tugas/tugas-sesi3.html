@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Pribadi - Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .hero-img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .section-title {
+      margin-top: 2rem;
+    }
+    .card-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Daffa Ramadhan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <main class="container-fluid px-md-4">
+    <section class="text-center py-5">
+      <h1>Hi, I am <span class="text-primary">Daffa Ramadhan</span><br>Web Developer</h1>
+      <p class="lead">Saya membangun website berkualitas tinggi dan responsif</p>
+    </section>
+
+    <section id="about" class="text-center">
+      <h2 class="section-title">About Me</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+        <div class="col">
+          <div class="card p-3">
+            <div class="card-icon text-primary">👤</div>
+            <strong>Full Name:</strong> Daffa
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-3">
+            <div class="card-icon text-primary">🎓</div>
+            <strong>Education:</strong> SMK ASSALAAM
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-3">
+            <div class="card-icon text-primary">💼</div>
+            <strong>Pekerjaan:</strong> Backend Developer
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-3">
+            <div class="card-icon text-primary">📞</div>
+            <strong>Contact:</strong> @d4pfft
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-3">
+            <div class="card-icon text-primary">🎯</div>
+            <strong>Hobi:</strong> Coding
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-3">
+            <div class="card-icon text-primary">📍</div>
+            <strong>Alamat:</strong> Bandung
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="text-center py-5">
+      <h2 class="section-title">My Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../assets/13.jpg" class="card-img-top" alt="Proyek 1">
+            <div class="card-body">
+              <p class="card-text">Proyek 1</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../assets/7.jpg" class="card-img-top" alt="Proyek 2">
+            <div class="card-body">
+              <p class="card-text">Proyek 2</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../assets/19.jpg" class="card-img-top" alt="Proyek 3">
+            <div class="card-body">
+              <p class="card-text">Proyek 3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="infoModalLabel">Informasi Tambahan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Ini adalah contoh popup modal.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const myModal = new bootstrap.Modal(document.getElementById('infoModal'));
+    window.onload = () => {
+      setTimeout(() => myModal.show(), 2000);
+    }
+  </script>
+</body>
+
+</html>
