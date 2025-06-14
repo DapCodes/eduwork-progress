@@ -54,4 +54,3 @@ const produk = [
   
   // Tampilkan semua produk saat halaman pertama kali dibuka
   window.onload = () => tampilkanProduk("semua");
-  

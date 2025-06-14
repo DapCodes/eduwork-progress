@@ -1,0 +1,19 @@
+create
+INSERT INTO products (name, price, description, stock)
+VALUES ('Headphone Bass', 250000.00, 'Headphone dengan suara bass tinggi', 20);
+
+read
+-- Semua produk
+SELECT * FROM products;
+
+-- Produk berdasarkan ID
+SELECT * FROM products WHERE id = 1;
+
+
+update
+UPDATE products
+SET price = 275000.00, stock = 18
+WHERE id = 1;
+
+delete
+DELETE FROM products WHERE id = 1;
