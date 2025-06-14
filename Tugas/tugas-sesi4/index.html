@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profil Pribadi - John Doe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">John Doe</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portofolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Keahlian</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <!-- HERO SECTION -->
+<section class="hero d-flex align-items-center">
+    <div class="container">
+        <div class="row align-items-center text-center text-md-start">
+            <div class="col-md-5 mb-4 mb-md-0">
+                <img src="/img/5.png" class="img-fluid rounded-circle shadow" alt="Foto Profil">
+            </div>
+            <div class="col-md-7">
+                <h1 class="display-5 fw-bold">Halo, Saya John Doe</h1>
+                <p class="lead">Web Developer | Designer | Freelancer</p>
+            <button class="btn btn-primary btn-lg btn-hover" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                Tentang Saya
+            </button>
+            </div>
+        </div>
+    </div>
+</section>
+  
+
+  <!-- MODAL -->
+  <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="aboutModalLabel">Tentang Saya</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Saya adalah pengembang web dengan pengalaman lebih dari 5 tahun dalam membangun website modern, cepat, dan responsif.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO -->
+  <section class="container my-5" id="portfolio">
+    <h2 class="text-center mb-4">Proyek Saya</h2>
+    <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+          <img src="/img/projecta-hero.png" class="d-block mx-auto img-fluid w-100" alt="Project 1">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/projectb-dasbor.png" class="d-block mx-auto img-fluid w-100" alt="Project 2">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/projectc.png" class="d-block mx-auto img-fluid w-100" alt="Project 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+  
+
+  <!-- SKILLS -->
+  <section class="bg-light py-5" id="skills">
+    <div class="container">
+      <h2 class="text-center mb-4">Keahlian</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="card p-3">
+            <h5>Frontend Development</h5>
+            <p>HTML, CSS, JS, React, Bootstrap</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card p-3">
+            <h5>Backend Development</h5>
+            <p>PHP, Laravel, MySQL, API</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card p-3">
+            <h5>UI/UX Design</h5>
+            <p>Figma, Adobe XD, Canva</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 John Doe | Dibuat dengan Bootstrap 5
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
